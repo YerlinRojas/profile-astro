@@ -1,0 +1,36 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Data from "../../../public/data/data.json";
+
+
+export async function getStaticPaths() {
+  const paths = Data.map(product => ({
+    params: { slug: product.slug }
+  }));
+
+  return paths;
+}
+
+const { slug } = Astro.params;
+
+const product = Data.find(item => item.slug === slug);
+
+if (!product) {
+  throw new Error(`Product not found for slug: ${slug}`);
+}
+
+const { name, description,gif } = product;
+
+---
+
+<Layout title={name}>
+  <div class="container mx-auto py-8">
+    <div class="flex flex-col items-center md:flex-row">
+      <img class="w-full md:w-1/2 h-auto object-cover rounded-lg" src={gif} alt={name} />
+      <div class="md:ml-8 mt-4 md:mt-0">
+        <h1 class="text-3xl font-bold mb-4">{name}</h1>
+        <p class="text-gray-700 dark:text-gray-400">{description}</p>
+      </div>
+    </div>
+  </div>
+</Layout>

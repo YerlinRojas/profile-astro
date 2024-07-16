@@ -1,0 +1,54 @@
+[
+    {
+      "name" : "Centro Medico Salud Femenina",
+      "description": "Este proyecto es un start kit web diseñado para un centro de ginecología y obstetricia. Se proyectan funcionalidades para que los pacientes y médicos puedan registrarse, acceder a servicios de laboratorio, camdoctor, chat y programar consultas.",
+      "image": "../png/centroMedico.png",
+      "gif":"../gif/centroMedico.gif",
+      "cat":"projects",
+      "slug": "centro-medico-salud-femenina",
+      "git":"https://github.com/YerlinRojas/Proyecto-SaludFemenina.git",
+      "demo":"https://yerlinrojas.github.io/Proyecto-SaludFemenina/"
+
+
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "../png/",
+      "gif":"../gif/",
+      "cat": "",
+      "slug": "primer",
+      "git":"",
+      "demo":""
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "../png/",
+      "gif":"../gif/",
+      "cat": "",
+      "slug": "segundo",
+      "git":"",
+      "demo":""
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "../png/",
+      "gif":"../gif/",
+      "cat": "",
+      "slug": "ter",
+      "git":"",
+      "demo":""
+    },
+    {
+      "name": "",
+      "description": "",
+      "image": "../png/",
+      "gif":"../gif/",
+      "cat": "",
+      "slug": "cuar",
+      "git":"",
+      "demo":""
+    }
+  ]

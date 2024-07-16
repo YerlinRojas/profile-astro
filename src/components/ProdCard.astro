@@ -1,0 +1,23 @@
+---
+interface Props {
+  name: string;
+  description: string;
+  image: string;
+  gif:string;
+  slug: string; // Add slug as a prop
+
+}
+
+const { name, description, image, slug,gif } = Astro.props;
+---
+<div class="relative w-full max-w-sm bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 overflow-hidden hover:scale-105 transition-transform duration-300">
+  <div class="absolute inset-0 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-75 backdrop-filter backdrop-blur-md p-4 rounded-lg text-center">
+      <h5 class="text-xl font-medium text-gray-100 dark:text-white">{name}</h5>
+      <a href={`/projects/${slug}`} class="mt-2 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700">
+        VER MÁS
+      </a>
+    </div>
+  </div>
+  <img class="w-full h-56 object-cover rounded-t-lg" src={image} alt={name} />
+</div>
