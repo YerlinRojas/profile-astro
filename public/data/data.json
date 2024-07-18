@@ -12,14 +12,34 @@
 
     },
     {
-      "name": "",
-      "description": "",
-      "image": "../png/",
-      "gif":"../gif/",
-      "cat": "",
-      "slug": "primer",
-      "git":"",
-      "demo":""
+      "name": "The Street Tree",
+      "description": "theStreetTree es un proyecto de estudio basado en una tienda en línea dedicada a la reventa y reciclaje de ropa. Tiene como objetivo reducir el impacto ambiental de la moda rápida mediante la recolección, restauración y venta de ropa usada de alta calidad.",
+      "image": "../png/street-blanco.png",
+      "gif":"../gif/streettree.gif",
+      "cat": "projects",
+      "slug": "the-street-tree",
+      "git":"https://github.com/YerlinRojas/theStreetTree",
+      "demo":"https://yerlinrojas.github.io/theStreetTree/"
+    },
+    {
+      "name": "El Mensón de Luz",
+      "description": "Este proyecto es un e-commerce desarrollado para un restaurante llamado El Mesón de Luz. Permite a los usuarios explorar el menú, realizar pedidos en línea y gestionar su experiencia de compra de manera eficiente.",
+      "image": "../png/mesondeluz.png",
+      "gif":"../gif/meson_de_luz.gif",
+      "cat": "projects",
+      "slug": "meson-de-luz",
+      "git":"https://github.com/YerlinRojas/MesonDeLuz.git",
+      "demo":"https://meson-de-luz.vercel.app/"
+    },
+    {
+      "name": "Encriptador de texto",
+      "description": "Este es un simple encriptador de texto que utiliza [algoritmo de encriptación] para asegurar la privacidad de los mensajes.",
+      "image": "../png/encriptador.png",
+      "gif":"../gif/encriptador.gif",
+      "cat": "projects",
+      "slug": "encriptador",
+      "git":"https://github.com/YerlinRojas/encriptador.git",
+      "demo":"https://yerlinrojas.github.io/encriptador/"
     },
     {
       "name": "",
@@ -27,17 +47,7 @@
       "image": "../png/",
       "gif":"../gif/",
       "cat": "",
-      "slug": "segundo",
-      "git":"",
-      "demo":""
-    },
-    {
-      "name": "",
-      "description": "",
-      "image": "../png/",
-      "gif":"../gif/",
-      "cat": "",
-      "slug": "ter",
+      "slug": "cuar",
       "git":"",
       "demo":""
     },

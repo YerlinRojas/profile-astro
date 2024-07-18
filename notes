@@ -3,3 +3,5 @@
 				title="Community"
 				body="Come say hi to our amazing Discord community. ❤️"
 			/>
+
+			hover:scale-105 transition-transform duration-300
