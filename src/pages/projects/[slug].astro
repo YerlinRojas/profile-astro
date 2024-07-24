@@ -21,21 +21,23 @@ if (!product) {
   throw new Error(`Product not found for slug: ${slug}`);
 }
 
-const { name, description,gif, image } = product;
+const { name, description,gif, image, git, demo } = product;
 
 ---
 
 <Layout title={name}>
   <Navbar2/>
   <main class="container mx-auto py-8">
-    <div class="flex flex-col items-center md:flex-row">
-        <!-- Image -->
-        <div class="flex-shrink-0 w-48 h-48">
-            <img class="object-contain w-full h-full rounded-lg" src={image} alt={name} />
-        </div>
+    <div class="flex flex-col items-center lg:mx-40 sm:mx-20 md:flex-row"> 
+        <!-- Image + Title-->
+        
+          <div class="flex-shrink-0 w-48 h-48">
+              <img class="object-contain w-full h-full rounded-lg" src={image} alt={name} />
+          </div>
+
         <!-- Text -->
-        <div class="md:ml-8 mt-4 md:mt-0">
-            <h1 class="text-3xl font-bold mb-4 dark:text-white">{name}</h1>
+        <div class=" mt-4 md:mt-0 md:ml-8">
+          <h1 class="text-3xl font-bold mb-4 dark:text-white">{name}</h1>
             <p class="text-gray-700 dark:text-gray-400">{description}</p>
         </div>
     </div>
@@ -45,13 +47,17 @@ const { name, description,gif, image } = product;
     </div>
     <!-- Icons -->
     <div class="mt-8 flex justify-center space-x-4">
-        <a href="https://example.com" target="_blank">
-            <img src="path/to/icon1.png" alt="Website" class="w-8 h-8">
+        <a href={demo} target="_blank">
+            <img src="/public/copiar-link.svg" alt="Website" class="w-8 h-8">
         </a>
-        <a href="https://github.com/username" target="_blank">
-            <img src="path/to/icon2.png" alt="GitHub" class="w-8 h-8">
+        <a href={git} target="_blank">
+            <img src="/public/github.svg" alt="GitHub" class="w-8 h-8">
         </a>
     </div>
 </main>
   
 </Layout>
+
+
+
+

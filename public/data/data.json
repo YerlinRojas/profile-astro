@@ -13,7 +13,7 @@
     },
     {
       "name": "The Street Tree",
-      "description": "theStreetTree es un proyecto de estudio basado en una tienda en línea dedicada a la reventa y reciclaje de ropa. Tiene como objetivo reducir el impacto ambiental de la moda rápida mediante la recolección, restauración y venta de ropa usada de alta calidad.",
+      "description": "The Street Tree es un proyecto de estudio basado en una tienda en línea dedicada a la reventa y reciclaje de ropa. Tiene como objetivo reducir el impacto ambiental de la moda rápida mediante la recolección, restauración y venta de ropa usada de alta calidad.",
       "image": "../png/street-blanco.png",
       "gif":"../gif/streettree.gif",
       "cat": "projects",

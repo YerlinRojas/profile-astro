@@ -1,0 +1,32 @@
+---
+import Layout from "../layouts/Layout.astro"
+import Navbar2 from "../components/Navbar2.astro"
+import Data from "../../public/data/profile.json"
+import Profile from "../components/Profile.astro"
+
+const title= "Aboutme";
+
+const profile= Data;
+---
+
+
+<Layout title={title}>
+    <Navbar2/>
+<main class="min-h-screen flex items-center justify-center 
+dark:bg-gray-900">
+
+<div >
+    {profile.map((dato) => (
+        <Profile
+            photo={dato.photo}
+            name={dato.name}
+            position={dato.position}
+            description={dato.description}
+            skills={dato.skills} 
+            
+        />
+    ))}
+</div>
+
+</main>
+</Layout>
