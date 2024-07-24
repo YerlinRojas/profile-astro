@@ -11,6 +11,10 @@
   },
   "dependencies": {
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/oswald": "^5.0.20",
+    "@fontsource-variable/yanone-kaffeesatz": "^5.0.24",
+    "@fontsource/krona-one": "^5.0.13",
+    "@fontsource/twinkle-star": "^5.0.20",
     "astro": "^4.11.5",
     "tailwindcss": "^3.4.4"
   }

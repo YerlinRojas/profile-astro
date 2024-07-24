@@ -1,11 +1,31 @@
 ---
 import { Image } from "astro:assets";
 import logo from "../../public/favicon5.svg";
+
+const anim = {
+  old: {
+    name: 'fadeIn',
+    duration: '0.2s',
+    easing: 'linear',
+    fillMode: 'forwards',
+  },
+  new: {
+    name: 'fadeOut',
+    duration: '0.3s',
+    easing: 'linear',
+    fillMode: 'backwards',
+  }
+};
+
+const myFade = {
+  forwards: anim,
+  backwards: anim,
+};
 ---
 
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
-<div class="w-full h-72 text-gray-800 bg-white dark:text-gray-200 dark:bg-gray-800 dark:bg-gradient-to-b from-gray-800 via-gray-900 to-black " 
+<div transition:animate={myFade} class="h-div w-full  md:h-64 lg:h-72 text-gray-800 bg-white dark:text-gray-200 dark:bg-gray-800 dark:bg-gradient-to-b from-gray-800 via-gray-900 to-black " 
      style="box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);" 
      x-data="{ open: false }">
   <div class="flex flex-col items-end justify-end max-w-screen-xl px-4 mx-auto lg:px-8 h-full ">
@@ -25,21 +45,42 @@ import logo from "../../public/favicon5.svg";
 
       <nav :class="{'flex': open, 'hidden': !open}" class="flex-row flex-grow justify-end pb-2 md:pb-0 hidden md:flex md:justify-end md:flex-row md:gap-2">
 
-      <a
-        class="px-4 py-2 mt-2 md:px-1 text-white text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="/aboutme">About me</a
-      >
-      <a
-        class="px-4 py-2 mt-2 md:px-1 text-white text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="/projects">Projects</a
-      >
+        <a href="/aboutme"
+        class="relative inline-block px-4 py-2 md:px-1 text-sm text-gray-800 border-b-2
+               hover:text-gray-400 font-bold bg-transparent hover:border-b-4 transition-all duration-200 
+               md:text-center 
+               dark:text-white dark:hover:text-gray-500 dark:hover:border-b-4 transition-all duration-200 
+               {{ currentPath === 'aboutme' ? 'active' : '' }}">
+       ABOUT ME
+     </a>
+     <a href="/projects"
+           class="relative inline-block px-4 py-2 md:px-1 text-sm text-gray-800 border-b-2
+                  hover:text-gray-400 font-bold bg-transparent hover:border-b-4 transition-all duration-200 
+                  md:text-center 
+                  dark:text-white dark:hover:text-gray-500 dark:hover:border-b-4 transition-all duration-200 
+                  {{ currentPath === 'projects' ? 'active' : '' }}">
+          PROJECTS
+        </a>
 
-      <a
-        class="px-4 py-2 mt-2 md:px-1 text-white text-sm font-bold bg-transparent rounded-lg dark-mode:bg-transparent dark-mode:hover:bg-gray-600 dark-mode:focus:bg-gray-600 dark-mode:focus:text-white dark-mode:hover:text-white dark-mode:text-gray-200 md:mt-0 md:text-center hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline"
-        href="/contact">Contact</a
-      >
+        <a href="/contact"
+        class="relative inline-block px-4 py-2 md:px-1 text-sm text-gray-800 border-b-2
+               hover:text-gray-400 font-bold bg-transparent hover:border-b-4 transition-all duration-200 
+               md:text-center 
+               dark:text-white dark:hover:text-gray-500 dark:hover:border-b-4 transition-all duration-200 
+               {{ currentPath === 'contact' ? 'active' : '' }}">
+       CONTACT
+     </a>
         
       </nav>
     </div>
   </div>
 </div>
+
+<style>
+  @media (max-width: 640px) {
+    
+    .h-div{
+      height: 250px
+    }
+  }
+</style>

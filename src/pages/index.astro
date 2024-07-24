@@ -1,89 +1,107 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Navbar from '../components/Navbar.astro';
+// Supports weights 200-700
+import '@fontsource-variable/oswald';
+import '@fontsource-variable/yanone-kaffeesatz';
+import { Image } from 'astro:assets';
+import  atomo  from '../../public/png/atomoback.png'
+import eclipse from '../../public/png/eclipse.png'
+import sombra from '../../public/png/sombra.png'
+import yerlin from '../../public/yerlinspace4.svg'
+
+
+
 ---
 
-<Layout title="YerlinSpace">
+<Layout title="YerlinSpace🚀">
 
-		<main>
-	
-			<Navbar/>
-	
-	
-			
-	     
-		<p class="welcome">WELCOME</p>
-		</main>
+  <main class="
+      w-full
+      h-screen
+      bg-gradient-to-b from-white via-white to-black 
+      dark:bg-gradient-to-b dark:from-gray-800 dark:via-gray-900 dark:to-black
+    " > 
+    <Navbar/>
+      <div class="
+      flex
+      flex-col
+      justify-center
+      items-center
+      relative
+      sm:mt-[30%]
+      lg:mt-10
+      
+      ">
+      
+      <Image  src={ atomo } alt='atomoback' 
+      class=" w-[30%] absolute z-0 " />
 
-</Layout>
+      <Image  src={ eclipse } alt='atomoback' 
+      class="atomo2 w-[35%] absolute z-1 " />
 
-<style>
-	.welcome {
-    font-size: 100px;
-    font-family: fantasy;
-    position: absolute; /* Asegura que el texto se posicione de manera absoluta */
-    left: -100%; /* Inicia fuera de la pantalla a la izquierda */
-    animation: slide-in 2s forwards; /* Aplica la animación slide-in por 2 segundos */
+      <Image  src={ sombra } alt='atomoback' 
+      class="atomo3 mt-[1%] ml-[1%] w-[28%] absolute z-2 " />
+
+      <Image  src={ yerlin } alt='atomoback' 
+      class="atomo3 w-[28%] absolute z-3 " />
+
+     
+      
+       
+      </div>
+      
+      </div>
+      
+  </main>
+  
+  </Layout>
+  
+  
+  <style>
+  html {
+    overflow: hidden;
+  }
+  
+  .atomo2{
+    opacity: 0; /* Inicia con opacidad 0 */
+    animation: fadeIn 4s forwards;
+    filter:blur(50px) /* Animación de fade-in */
+  }
+  .atomo3{
+    opacity: 0; /* Inicia con opacidad 0 */
+    animation: fadeIn 7s forwards; 
+  }
+  
+
+  
+  @keyframes fadeIn {
+  0% {
+    opacity: 0;
+    
+  }
+  100% {
+    opacity: 1;
+    
+  }
 }
 
-@keyframes slide-in {
-    0% {
-        left: -100%; /* Inicia fuera de la pantalla a la izquierda */
-    }
-    100% {
-        left: 50%; /* Termina centrado en la pantalla */
-        transform: translateX(-50%); /* Ajusta la posición para que quede centrado */
-    }
+@keyframes yerlinspace {
+  0% {
+    opacity: 0;
+    filter: blur(10px); /* Inicia con desenfoque */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Inicia con sombra */
+  }
+  100% {
+    opacity: 1;
+    
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); /* Termina sin sombra */
+  }
 }
-
-	/* main {
-		margin: auto;
-		padding: 1rem;
-		width: 800px;
-		max-width: calc(100% - 2rem);
-		color: white;
-		font-size: 20px;
-		line-height: 1.6;
-	}
-	.astro-a {
-		position: absolute;
-		top: -32px;
-		left: 50%;
-		transform: translatex(-50%);
-		width: 220px;
-		height: auto;
-		z-index: -1;
-	}
-
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		margin-bottom: 2rem;
-		border: 1px solid rgba(var(--accent-light), 25%);
-		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
-		padding: 1.5rem;
-		border-radius: 8px;
-	}
-	.instructions code {
-		font-size: 0.8em;
-		font-weight: bold;
-		background: rgba(var(--accent-light), 12%);
-		color: rgb(var(--accent-light));
-		border-radius: 4px;
-		padding: 0.3em 0.4em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent-light));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
-	} */
-</style>
+  
+  @media (max-width: 640px) {
+    .welcome {
+      font-size: 1.5rem; /* Ajusta el tamaño de fuente para dispositivos pequeños */
+    }
+  }
+  </style>

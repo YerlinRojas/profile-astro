@@ -3,26 +3,28 @@ import Layout from "../layouts/Layout.astro";
 import Data from "../../public/data/data.json";
 import ProdCard from "../../src/components/ProdCard.astro";
 import Navbar2 from "../components/Navbar2.astro";
+
+
+
 const title = "Projects";
 
 const productos = Data;
 ---
 
 <Layout title={title}>
-    <div class="flex">
         <Navbar2/>
-    </div>
     <main class="min-h-screen flex items-center justify-center 
     dark:bg-gray-900
     ">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 max-w-screen-lg">
             {productos.map((dato) => (
-                <ProdCard 
+                <ProdCard
                     name={dato.name}
                     description={dato.description}
                     image={dato.image}
                     slug={dato.slug} 
                     gif={dato.gif}
+                    
                 />
             ))}
         </div>

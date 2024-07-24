@@ -1,6 +1,8 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Data from "../../../public/data/data.json";
+import Navbar2 from "../../components/Navbar2.astro";
+import { Image } from "astro:assets";
 
 
 export async function getStaticPaths() {
@@ -19,18 +21,37 @@ if (!product) {
   throw new Error(`Product not found for slug: ${slug}`);
 }
 
-const { name, description,gif } = product;
+const { name, description,gif, image } = product;
 
 ---
 
 <Layout title={name}>
-  <div class="container mx-auto py-8">
+  <Navbar2/>
+  <main class="container mx-auto py-8">
     <div class="flex flex-col items-center md:flex-row">
-      <img class="w-full md:w-1/2 h-auto object-cover rounded-lg" src={gif} alt={name} />
-      <div class="md:ml-8 mt-4 md:mt-0">
-        <h1 class="text-3xl font-bold mb-4">{name}</h1>
-        <p class="text-gray-700 dark:text-gray-400">{description}</p>
-      </div>
+        <!-- Image -->
+        <div class="flex-shrink-0 w-48 h-48">
+            <img class="object-contain w-full h-full rounded-lg" src={image} alt={name} />
+        </div>
+        <!-- Text -->
+        <div class="md:ml-8 mt-4 md:mt-0">
+            <h1 class="text-3xl font-bold mb-4 dark:text-white">{name}</h1>
+            <p class="text-gray-700 dark:text-gray-400">{description}</p>
+        </div>
     </div>
-  </div>
+    <!-- GIF -->
+    <div class="w-full mt-8">
+        <img class="w-full md:w-1/2 h-auto object-cover rounded-lg mx-auto" src={gif} alt={name} />
+    </div>
+    <!-- Icons -->
+    <div class="mt-8 flex justify-center space-x-4">
+        <a href="https://example.com" target="_blank">
+            <img src="path/to/icon1.png" alt="Website" class="w-8 h-8">
+        </a>
+        <a href="https://github.com/username" target="_blank">
+            <img src="path/to/icon2.png" alt="GitHub" class="w-8 h-8">
+        </a>
+    </div>
+</main>
+  
 </Layout>
