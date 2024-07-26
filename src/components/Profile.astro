@@ -1,35 +1,97 @@
 ---
+import Data from '../../public/data/profile.json';
 
-interface Props{
+// Define las interfaces para los datos
+interface SocialMedia {
+    name: string;
+    url: string;
+    icon: string;
+}
+
+interface Profile {
     photo: string;
     name: string;
     position: string;
     description: string;
-    skills: string
-
+    skills: string;
+    rrss: SocialMedia[];
 }
 
-const {photo, name, position, description, skills} = Astro.props;
+// Asume que el archivo JSON es un array de perfiles y toma el primero (o el adecuado)
+const profiles: Profile[] = Data;
+const profile = profiles[0]; // Obtén el primer perfil (o el que necesites)
+const { photo, name, position, description, skills, rrss } = profile;
 ---
-<div class="bg-white dark:bg-gray-900 p-6 rounded-lg shadow-lg max-w-4xl w-full md:max-w-none md:shadow-none">
-    <div class="flex flex-col justify-center md:flex-row items-center ">
-        <!-- Profile Photo -->
-        <div class="flex-shrink-0 w-72 h-72 mb-4 md:mb-0 md:mr-4">
-            <img class="w-full h-full rounded-lg object-cover" src={photo} alt={name}>
-        </div>
-        <div class="flex flex-col items-center justify-center">
-            <!-- Name -->
-            <h1 class="text-2xl font-bold text-gray-900 dark:text-white">{name}</h1>
-            <!-- Position -->
-            <h3 class="text-xl text-gray-600 dark:text-gray-300">{position}</h3>
-        </div>
+<script is:inline src="../../src/js/aboutme.js"></script>
+
+<div class="relative h-auto">
+    <!-- Photo -->
+    <div class="-translate-y-8 w-72 h-72">
+        <img class="w-full h-full rounded-full object-cover" src={photo} alt={name}>
     </div>
-    <!-- Description -->
-    <div class="mt-4">
-        <p class="text-gray-700 dark:text-gray-400">{description}</p>
-    </div>
-    <!-- Skills -->
-    <div class="mt-4">
-        <h5 class="text-gray-500 dark:text-gray-400">{skills}</h5>
+    <!-- Buttons -->
+    <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-4 flex space-x-4">
+        <div class="-translate-x-full">
+            <button onclick="toggleSection('description')" class="btn-hover">
+                <img class="w-10 h-10 bg-white dark:bg-gray-900 rounded-full" src="/description.svg" alt="Show Description">
+            </button>
+        </div>
+        <div class="translate-y-7">
+            <button onclick="toggleSection('skills')" class="btn-hover">
+                <img class="w-10 h-10 bg-white dark:bg-gray-900 rounded-full" src="/habilidades.svg" alt="Show Skills">
+            </button>
+        </div>
+        <div class="translate-x-full">
+            <button onclick="toggleSection('rrss')" class="btn-hover">
+                <img class="w-10 h-10 bg-white dark:bg-gray-900 rounded-full" src="/gmail.svg" alt="Show Social Media">
+            </button>
+        </div>
     </div>
 </div>
+
+<!-- Profile Title and Position -->
+<div class="flex flex-col mt-8 items-center justify-center">
+    <h1 class="text-2xl font-bold text-gray-900 dark:text-white">{name}</h1>
+    <h3 class="text-xl text-gray-600 dark:text-gray-300">{position}</h3>
+</div>
+
+<!-- Hidden Blocks -->
+<div class="relative mt-4 ">
+    <div id="description" class="dark:bg-gray-900 hidden absolute w-screen left-1/2 transform -translate-x-1/2 mt-8 p-4">
+        <p class="p-10 text-gray-700 text-justify dark:text-gray-400">{description}</p>
+    </div>
+    <div id="skills" class="dark:bg-gray-900 hidden absolute w-screen left-1/2 transform -translate-x-1/2 mt-8 p-4">
+        <h5 class="p-10  text-gray-500 text-center dark:text-gray-400">{skills}</h5>
+    </div>
+    <div id="rrss" class="dark:bg-gray-900 hidden absolute w-screen left-1/2 transform -translate-x-1/2 mt-8 p-4">
+        <div class="flex space-x-4 justify-center gap-4">
+            {rrss.map((social) => (
+                <a href={social.url} target="_blank" rel="noopener noreferrer">
+                    <img src={social.icon} alt={social.name} class="w-8 h-8">
+                </a>
+            ))}
+        </div>
+    </div>
+</div>
+
+<style>
+    @keyframes slideInFromRight {
+        0% {
+            transform: translate(100%, -100%);
+            opacity: 0;
+        }
+        100% {
+            transform: translate(0, 0);
+            opacity: 1;
+        }
+    }
+
+    .btn-hover {
+        box-sizing: border-box;
+    }
+
+    .btn-hover:hover {
+        background-color: rgb(73, 180, 223);
+        border-radius: 50% 5px;
+    }
+</style>

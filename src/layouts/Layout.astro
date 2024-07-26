@@ -18,7 +18,7 @@ const { title } = Astro.props;
 		<title>{title}</title>
 		<ViewTransitions/>
 	</head>
-	<body class="dark:bg-gradient-to-b dark:from-gray-800 dark:via-gray-900 dark:to-black">
+	<body class="h-full dark:bg-gradient-to-b dark:from-gray-800 dark:via-gray-900 dark:to-black">
 		<slot />
 	</body>
 </html>
@@ -37,7 +37,7 @@ const { title } = Astro.props;
 	html {
 		font-family: system-ui, sans-serif;
 		background: white;
-		background-size: 224px;
+		
 	}
 	code {
 		font-family:

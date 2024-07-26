@@ -3,7 +3,25 @@
         "photo": "/profile_inv.jpg",
         "name": "Yerlin Rojas",
         "position":"Entry-level Frontend Developer",
-        "description":"Como arquitecta con experiencia en el diseño y la planificación de proyectos, he llegado a valorar las habilidades técnicas y analíticas que se requieren en el desarrollo de software y la programación. A lo largo de mi trayectoria profesional como arquitecta, he trabajado en proyectos que han involucrado el uso de software especializado y he tenido la oportunidad de familiarizarme con algunos lenguajes de programación básicos. Estos encuentros han despertado mi curiosidad y me han llevado a explorar de manera autodidacta el mundo de la programación. Durante los últimos meses, he invertido tiempo y esfuerzo en aprender más sobre programación a través de cursos en línea, tutoriales y proyectos personales. He adquirido conocimientos en lenguajes como JavaScript implementando tecnologías como React y teniendo conocimientos en HTML y CSS, he explorado el desarrollo web, la manipulación de datos y la resolución de problemas algorítmicos. Me he dado cuenta de que disfruto enormemente del proceso creativo y desafiante de escribir código y construir soluciones funcionales. Además, la programación ofrece un campo en constante evolución que me atrae. Estoy emocionada por la oportunidad de trabajar en un entorno dinámico y colaborativo, donde pueda continuar aprendiendo y creciendo profesionalmente. Creo que mis habilidades de diseño, capacidad para resolver problemas y enfoque detallado, adquiridos durante mi carrera en arquitectura, son transferibles y pueden aportar un valor significativo al campo de la programación. Si bien mi experiencia profesional anterior está en el campo de la arquitectura, estoy convencida de que mi pasión por la programación, mi compromiso con el aprendizaje continuo y mi habilidad para adaptarme rápidamente a nuevos desafíos me permitirán tener éxito en este cambio de carrera.",
-        "skills":"HTML | CSS | JAVASCRIPT | DESARROLLO WEB | ILLUSTRATOR | PHOTOSHOP | SASS GITHUB | NODE | EXPRESS | MONGODB | POSTMAN | ASTRO | REACT | META SPARK | SLQ | MERN | NOSQL | SCRUM | METODOLOGIA AGILE"
+        "description":"Como arquitecta con experiencia en el diseño y la planificación de proyectos, he llegado a valorar las habilidades técnicas y analíticas que se requieren en el desarrollo de software y la programación. A lo largo de mi trayectoria profesional como arquitecta, he trabajado en proyectos que han involucrado el uso de software especializado y he tenido la oportunidad de familiarizarme con algunos lenguajes de programación básicos. Estos encuentros han despertado mi curiosidad y me han llevado a explorar de manera autodidacta el mundo de la programación. Durante los últimos meses, he invertido tiempo y esfuerzo en aprender más sobre programación a través de cursos en línea, tutoriales y proyectos personales. He adquirido conocimientos en lenguajes como JavaScript implementando tecnologías como React y teniendo conocimientos en HTML y CSS, he explorado el desarrollo web, la manipulación de datos y la resolución de problemas algorítmicos. Me he dado cuenta de que disfruto enormemente del proceso creativo y desafiante de escribir código y construir soluciones funcionales. Además, la programación ofrece un campo en constante evolución que me atrae. Creo que mis habilidades de diseño, capacidad para resolver problemas y enfoque detallado, adquiridos durante mi carrera en arquitectura, son transferibles y pueden aportar un valor significativo al campo de la programación. Si bien mi experiencia profesional anterior está en el campo de la arquitectura, estoy convencida de que mi pasión por la programación, mi compromiso con el aprendizaje continuo y mi habilidad para adaptarme rápidamente a nuevos desafíos me permitirán tener éxito en este cambio de carrera.",
+        "skills":"HTML | CSS | JAVASCRIPT | DESARROLLO WEB | ILLUSTRATOR | PHOTOSHOP | SASS GITHUB | NODE | EXPRESS | MONGODB | POSTMAN | ASTRO | REACT | META SPARK | SLQ | MERN | NOSQL | SCRUM | METODOLOGIA AGILE",
+        "rrss":[ 
+            {
+                "name":"GitHub",
+                "url":"https://github.com/yerlinrojas",
+                "icon":"/github.svg"
+            },
+            {
+                "name":"LinkedIn",
+                "url":"https://linkedin.com/in/yerlinrojas",
+                "icon":"/linkedin.svg"
+            },
+            {
+                "name":"Twitter",
+                "url":"https://twitter.com/yerlinrojaseeeee",
+                "icon":"/x.svg"
+            }
+        ]
+        
     }
 ]
