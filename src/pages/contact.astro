@@ -1,0 +1,39 @@
+---
+import Navbar2 from "../components/Navbar2.astro";
+import Layout from "../layouts/Layout.astro";
+import Contact_form from "../components/react/Contact_form"
+
+const titlle = "Contact"
+---
+<script is:inline src="../../src/js/hover.js"> </script>
+<Layout title={titlle}>
+    <Navbar2/>
+    <main class="w-full min-h-screen
+    flex flex-row 
+    dark:bg-gradient-to-b dark:from-gray-800 dark:via-gray-900 dark:to-black flex items-center justify-center">
+
+       <!--  <div class="shadow-md image-container">
+            <img class="w-72 default-show" src="/png/bad-01.png" alt="bad">
+            <img class="w-72 hover-show hidden" src="/png/smile-02.png" alt="smile">
+            <img class="hidden" src="/png/happy-03.png" alt="happy">
+        </div> -->
+        
+        <Contact_form client:only/>
+    </main>
+</Layout>
+
+
+
+<style>
+    .hover-show {
+        display: none;
+    }
+
+    button:hover + .image-container .hover-show {
+        display: block;
+    }
+
+    button:hover + .image-container .default-show {
+        display: none;
+    }
+</style>

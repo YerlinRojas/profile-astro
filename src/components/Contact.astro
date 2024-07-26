@@ -1,0 +1,28 @@
+---
+
+---
+
+
+<div class="shadow-md">
+    <img class="w-72 " src="/png/bad-01.png" alt="bad">
+
+    <img class="w-72" src="/png/smile-02.png" alt="smile">
+
+    <img class="hidden" src="/png/happy-03.png" alt="happy">
+</div>
+
+<button>Contact</button>
+
+<style>
+    .hover-show {
+        display: none;
+    }
+
+    button:hover + .image-container .hover-show {
+        display: block;
+    }
+
+    button:hover + .image-container .default-show {
+        display: none;
+    }
+</style>
