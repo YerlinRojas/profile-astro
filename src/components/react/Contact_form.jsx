@@ -15,8 +15,8 @@ const Contact_Form = () => {
                 if (res.status === 200) {
                     Swal.fire({
                         icon: "success",
-                        title: "Mensaje enviado",
-                        text: "Pronto nos pondremos en contacto contigo",
+                        title: "Gracias",
+                        text: "Pronto me contacto contigo",
                         showConfirmButton: false,
                         timer: 3000,
                     });
@@ -46,7 +46,7 @@ const Contact_Form = () => {
         <div className="flex flex-row items-center justify-center w-full min-h-screen">
             <div className="w-[40%] flex items-center justify-center image-container">
                 <img ref={imageRef1} className="w-72 default-show" src="/png/bad-01.png" alt="bad" />
-                <img ref={imageRef2} className="w-72 hover-show hidden" src="/png/happy-03.png" alt="happy" />
+                <img ref={imageRef2} className="w-72 hover-show hidden" src="/gif/i_yerlin2.gif" alt="happy" />
             </div>
 
             <form ref={formRef} className="w-[60%] px-8 py-4" onSubmit={sendEmail}>
