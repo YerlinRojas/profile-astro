@@ -42,23 +42,33 @@
       "demo":"https://yerlinrojas.github.io/encriptador/"
     },
     {
-      "name": "",
-      "description": "",
-      "image": "../png/",
-      "gif":"../gif/",
-      "cat": "",
-      "slug": "cuar",
-      "git":"",
-      "demo":""
+      "name": "Backend API",
+      "description": "Este es un proyecto backend desarrollado con Node.js, Express y MongoDB. Proporciona una API para manejar productos, usuarios y carritos de compra. Los productos y usuarios se almacenan en una base de datos MongoDB. El backend permite la gestión completa de productos y usuarios, así como la funcionalidad de un carrito de compra, que se asocia a cada usuario.",
+      "image": "../png/backend_API.png",
+      "gif":"../gif/backend-api.gif",
+      "cat": "projects",
+      "slug": "backend-api",
+      "git":"https://github.com/YerlinRojas/backendProject.git",
+      "demo":"https://github.com/YerlinRojas/backendProject.git"
     },
     {
-      "name": "",
-      "description": "",
-      "image": "../png/",
-      "gif":"../gif/",
-      "cat": "",
-      "slug": "cuar",
-      "git":"",
-      "demo":""
+      "name": "Rústicos Mendoza",
+      "description": "Proyecto desarrollado para una empresa ubicada en mendoza, Argentina. Esta empresa se dedica a la venta y comercialización de productos para el revestimiento de espacios tanto interior como exterior.",
+      "image": "../png/rusticosMendoza.png",
+      "gif":"../gif/rusticos_mendoza.gif",
+      "cat": "projects",
+      "slug": "rusticos-mendoza",
+      "git":"https://www.rusticosmendoza.ar",
+      "demo":"https://www.rusticosmendoza.ar"
+    },
+    {
+      "name": "DB Central Medical",
+      "description": "Nuestro equipo de desarrollo está inmerso en la creación de un sistema de gestión para calendarizar turnos medicos, especializandose en turnos de terapia psicologica, pudiendo crecer para otras especialidades medicas dentro del centro medico. Nos enfrentamos al emocionante desafío de diseñar una base de datos eficiente que maneje de manera óptima todas las operaciones relacionadas con la información de pacientes, médicos, citas, historias médicas y terapias.",
+      "image": "../png/database_healthcare.png",
+      "gif":"../png/DiagramaEntidadRelacion.png",
+      "cat": "projects",
+      "slug": "db-centralmedica",
+      "git":"https://github.com/YerlinRojas/proyecto-final-sql.git",
+      "demo":"https://github.com/YerlinRojas/proyecto-final-sql.git"
     }
   ]
