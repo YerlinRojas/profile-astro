@@ -17,3 +17,4 @@ function toggleSection(sectionId) {
         rrss.style.display = 'block';
     }
 }
+window.toggleSection = toggleSection;
