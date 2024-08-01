@@ -22,7 +22,7 @@ const profiles: Profile[] = Data;
 const profile = profiles[0]; // Obtén el primer perfil (o el que necesites)
 const { photo, name, position, description, skills, rrss } = profile;
 ---
-<script is:inline src="../../js/aboutme.js"></script>
+<!-- <script is:inline src="/js/hover.js"></script> -->
 
 <div class="relative h-auto">
     <!-- Photo -->
@@ -73,6 +73,31 @@ const { photo, name, position, description, skills, rrss } = profile;
         </div>
     </div>
 </div>
+
+
+<script>
+    function toggleSection(sectionId) {
+    const description = document.getElementById('description');
+    const skills = document.getElementById('skills');
+    const rrss = document.getElementById('rrss');
+
+    // Oculta todas las secciones
+    description.style.display = 'none';
+    skills.style.display = 'none';
+    rrss.style.display = 'none';
+
+    // Muestra la sección seleccionada
+    if (sectionId === 'description') {
+        description.style.display = 'block';
+    } else if (sectionId === 'skills') {
+        skills.style.display = 'block';
+    } else if (sectionId === 'rrss') {
+        rrss.style.display = 'block';
+    }
+}
+window.toggleSection = toggleSection;
+
+</script>
 
 <style>
     @keyframes slideInFromRight {
