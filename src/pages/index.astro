@@ -29,7 +29,8 @@ import yerlin from '../../public/yerlinspace4.svg'
       justify-center
       items-center
       relative
-      sm:mt-[30%]
+      mt-20
+      md:mt-10
       lg:mt-10
       
       ">
@@ -44,7 +45,7 @@ import yerlin from '../../public/yerlinspace4.svg'
       class="atomo3 mt-[1%] ml-[1%] w-[28%] absolute z-2 " />
 
       <Image  src={ yerlin } alt='atomoback' 
-      class="atomo3 w-[28%] absolute z-3 " />
+      class="atomo4 w-[28%] absolute z-3 " />
 
      
       
@@ -65,12 +66,18 @@ import yerlin from '../../public/yerlinspace4.svg'
   
   .atomo2{
     opacity: 0; /* Inicia con opacidad 0 */
-    animation: fadeIn 4s forwards;
+    animation: fadeIn 2s forwards;
     filter:blur(50px) /* Animación de fade-in */
   }
   .atomo3{
+    opacity: 2; /* Inicia con opacidad 0 */
+    animation: fadeIn 2s forwards; 
+    filter:blur(5px)
+  }
+
+  .atomo4{
     opacity: 0; /* Inicia con opacidad 0 */
-    animation: fadeIn 7s forwards; 
+    animation: fadeIn 6s forwards; 
   }
   
 

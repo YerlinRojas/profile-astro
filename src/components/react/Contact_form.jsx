@@ -44,7 +44,7 @@ const Contact_Form = () => {
     }
 
     return (
-        <div className="flex flex-row items-center justify-center w-full min-h-screen">
+        <div className="flex flex-col lg:flex-row md:flex-row xl:flex-row items-center justify-center w-full min-h-screen">
             <div className="w-[40%] flex items-center justify-center image-container">
                 <img ref={imageRef1} className="w-5/6 default-show" src="/png/bad-01.png" alt="bad" />
                 <img ref={imageRef2} className="w-5/6 hover-show hidden" src="/gif/i_yerlin2.gif" alt="happy" />
