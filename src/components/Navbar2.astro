@@ -24,14 +24,29 @@ import logo from "../../public/favicon5.svg";
     </div>
     <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow items-end pb-4 md:pb-0 md:flex md:justify-end md:flex-row md:gap-2">
       <a href="/aboutme" class="relative inline-block px-4 py-2 md:px-1 text-sm text-gray-800 lg:border-b-2 hover:text-gray-400 font-bold bg-transparent hover:border-b-4 transition-all duration-200 md:text-center dark:text-white dark:hover:text-gray-500 dark:hover:border-b-4 transition-all duration-200 {{ currentPath === 'aboutme' ? 'active' : '' }}">
-        ABOUT
-      </a>
-      <a href="/projects" class="relative inline-block px-4 py-2 md:px-1 text-sm text-gray-800 lg:border-b-2 hover:text-gray-400 font-bold bg-transparent hover:border-b-4 transition-all duration-200 md:text-center dark:text-white dark:hover:text-gray-500 dark:hover:border-b-4 transition-all duration-200 {{ currentPath === 'projects' ? 'active' : '' }}">
-        PROJECTS
+        ABOUT ME
       </a>
       <a href="/contact" class="relative inline-block px-4 py-2 md:px-1 text-sm text-gray-800 lg:border-b-2 hover:text-gray-400 font-bold bg-transparent hover:border-b-4 transition-all duration-200 md:text-center dark:text-white dark:hover:text-gray-500 dark:hover:border-b-4 transition-all duration-200 {{ currentPath === 'contact' ? 'active' : '' }}">
         CONTACT
       </a>
+      <div x-data="{ open: false }" class="relative inline-block text-left">
+        <button @click="open = !open" class="relative inline-flex items-center px-4 py-2 text-sm font-bold text-gray-800 lg:border-b-2 hover:text-gray-400 bg-transparent hover:border-b-4 transition-all duration-200 md:text-center dark:text-white dark:hover:text-gray-500 dark:hover:border-b-4 transition-all duration-200">
+          PROJECTS
+          <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="ml-2 w-4 h-4 transition-transform duration-200 transform">
+            <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      
+        <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 mt-2 origin-top-right rounded-md shadow-lg bg-white dark:bg-gray-800 z-50">
+          <div class="py-1 rounded-md shadow-xs">
+            <a href="../projects/graphic" class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">GRAPHIC DESING</a>
+            <a href="../projects/it" class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">IT</a>
+            <a href="../projects/architect" class="block px-4 py-2 text-sm text-gray-800 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-gray-600">ARCHITECT</a>
+            
+          </div>
+        </div>
+      </div>
+      
     </nav>
   </div>
 </div>

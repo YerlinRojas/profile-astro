@@ -1,0 +1,58 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Data from "../../../../public/data/data.json";
+import Navbar3 from "../../../components/Navbar3.astro";
+import Responsive from "../../../components/react/Slider";
+
+
+export async function getStaticPaths() {
+  const paths = Data.map(product => ({
+    params: { slug: product.slug }
+  }));
+
+  return paths;
+}
+
+const { slug } = Astro.params;
+
+const product = Data.find(item => item.slug === slug);
+
+if (!product) {
+  throw new Error(`Product not found for slug: ${slug}`);
+}
+
+const { name, description,gif, image, git, demo, image1, image2, image3 } = product;
+
+---
+
+<Layout title={name}>
+  <Navbar3/>
+  <main class="container mx-auto py-8">
+    <div class="flex flex-col items-center lg:mx-40 sm:mx-20 md:flex-row"> 
+        <!-- Image + Title-->
+        
+          <div class="flex-shrink-0 w-48 h-48">
+              <img class="object-contain w-full h-full rounded-lg" src={image} alt={name} />
+          </div>
+
+        <!-- Text -->
+        <div class=" mt-4 md:mt-0 md:ml-8">
+          <h1 class="text-3xl font-bold mb-4 dark:text-white">{name}</h1>
+            <p class="text-gray-700 dark:text-gray-400">{description}</p>
+        </div>
+    </div>
+    <!-- GIF -->
+    <div class="flex justify-center items-center">
+      <div class="w-full max-w-screen-lg">  {/* Ajusta el max-w-screen-lg según tus necesidades */}
+        <Responsive images={[image1, image2, image3]} client:only />
+      </div>
+    </div>
+
+
+</main>
+  
+</Layout>
+
+
+
+

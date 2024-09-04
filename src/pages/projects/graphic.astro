@@ -1,0 +1,42 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import Data from "../../../public/data/data.json";
+import Navbar2 from "../../components/Navbar2.astro";
+import ProdCard from "../../components/ProdCard.astro";
+
+
+
+const title = "graphic";
+
+const productos = Data;
+const dataFiltrada = productos.filter((dato) => {
+  return dato.cat === title;
+});
+
+
+
+---
+
+<Layout title={title}>
+        <Navbar2/>
+    <main class="min-h-screen flex items-center justify-center 
+    dark:bg-gray-900
+    ">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 max-w-screen-lg">
+            {dataFiltrada.map((dato) => (
+                <ProdCard
+                    name={dato.name}
+                    description={dato.description}
+                    image={dato.image}
+                    slug={dato.slug} 
+                    gif={dato.gif}
+                    cat={dato.cat}
+                    image1={dato.image1}
+                    image2={dato.image2}
+                    image3={dato.image3}
+                    
+                />
+            ))}
+        </div>
+    </main>
+</Layout>

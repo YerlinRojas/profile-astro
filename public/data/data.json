@@ -2,9 +2,9 @@
     {
       "name" : "Centro Medico Salud Femenina",
       "description": "Este proyecto es un start kit web diseñado para un centro de ginecología y obstetricia. Se proyectan funcionalidades para que los pacientes y médicos puedan registrarse, acceder a servicios de laboratorio, camdoctor, chat y programar consultas.",
-      "image": "../png/centroMedico.png",
-      "gif":"../gif/centroMedico.gif",
-      "cat":"projects",
+      "image": "/png/centroMedico.png",
+      "gif":"/gif/centroMedico.gif",
+      "cat":"it",
       "slug": "centro-medico-salud-femenina",
       "git":"https://github.com/YerlinRojas/Proyecto-SaludFemenina.git",
       "demo":"https://yerlinrojas.github.io/Proyecto-SaludFemenina/"
@@ -14,9 +14,9 @@
     {
       "name": "The Street Tree",
       "description": "The Street Tree es un proyecto de estudio basado en una tienda en línea dedicada a la reventa y reciclaje de ropa. Tiene como objetivo reducir el impacto ambiental de la moda rápida mediante la recolección, restauración y venta de ropa usada de alta calidad.",
-      "image": "../png/street-blanco.png",
-      "gif":"../gif/streettree.gif",
-      "cat": "projects",
+      "image": "/png/street-blanco.png",
+      "gif":"/gif/streettree.gif",
+      "cat": "it",
       "slug": "the-street-tree",
       "git":"https://github.com/YerlinRojas/theStreetTree",
       "demo":"https://yerlinrojas.github.io/theStreetTree/"
@@ -24,9 +24,9 @@
     {
       "name": "El Mensón de Luz",
       "description": "Este proyecto es un e-commerce desarrollado para un restaurante llamado El Mesón de Luz. Permite a los usuarios explorar el menú, realizar pedidos en línea y gestionar su experiencia de compra de manera eficiente.",
-      "image": "../png/mesondeluz.png",
-      "gif":"../gif/meson_de_luz.gif",
-      "cat": "projects",
+      "image": "/png/mesondeluz.png",
+      "gif":"/gif/meson_de_luz.gif",
+      "cat": "it",
       "slug": "meson-de-luz",
       "git":"https://github.com/YerlinRojas/MesonDeLuz.git",
       "demo":"https://meson-de-luz.vercel.app/"
@@ -34,9 +34,9 @@
     {
       "name": "Encriptador de texto",
       "description": "Este es un simple encriptador de texto que utiliza [algoritmo de encriptación] para asegurar la privacidad de los mensajes.",
-      "image": "../png/encriptador.png",
-      "gif":"../gif/encriptador.gif",
-      "cat": "projects",
+      "image": "/png/encriptador.png",
+      "gif":"/gif/encriptador.gif",
+      "cat": "it",
       "slug": "encriptador",
       "git":"https://github.com/YerlinRojas/encriptador.git",
       "demo":"https://yerlinrojas.github.io/encriptador/"
@@ -44,9 +44,9 @@
     {
       "name": "Backend API",
       "description": "Este es un proyecto backend desarrollado con Node.js, Express y MongoDB. Proporciona una API para manejar productos, usuarios y carritos de compra. Los productos y usuarios se almacenan en una base de datos MongoDB. El backend permite la gestión completa de productos y usuarios, así como la funcionalidad de un carrito de compra, que se asocia a cada usuario.",
-      "image": "../png/backend_API.png",
-      "gif":"../gif/backend-api.gif",
-      "cat": "projects",
+      "image": "/png/backend_API.png",
+      "gif":"/gif/backend-api.gif",
+      "cat": "it",
       "slug": "backend-api",
       "git":"https://github.com/YerlinRojas/backendProject.git",
       "demo":"https://github.com/YerlinRojas/backendProject.git"
@@ -54,9 +54,9 @@
     {
       "name": "Rústicos Mendoza",
       "description": "Proyecto desarrollado para una empresa ubicada en mendoza, Argentina. Esta empresa se dedica a la venta y comercialización de productos para el revestimiento de espacios tanto interior como exterior.",
-      "image": "../png/rusticosMendoza.png",
-      "gif":"../gif/rusticos_mendoza.gif",
-      "cat": "projects",
+      "image": "/png/rusticosMendoza.png",
+      "gif":"/gif/rusticos_mendoza.gif",
+      "cat": "it",
       "slug": "rusticos-mendoza",
       "git":"https://www.rusticosmendoza.ar",
       "demo":"https://www.rusticosmendoza.ar"
@@ -64,11 +64,149 @@
     {
       "name": "DB Central Medical",
       "description": "Nuestro equipo de desarrollo está inmerso en la creación de un sistema de gestión para calendarizar turnos medicos, especializandose en turnos de terapia psicologica, pudiendo crecer para otras especialidades medicas dentro del centro medico. Nos enfrentamos al emocionante desafío de diseñar una base de datos eficiente que maneje de manera óptima todas las operaciones relacionadas con la información de pacientes, médicos, citas, historias médicas y terapias.",
-      "image": "../png/database_healthcare.png",
-      "gif":"../png/DiagramaEntidadRelacion.png",
-      "cat": "projects",
+      "image": "/png/database_healthcare.png",
+      "gif":"/png/DiagramaEntidadRelacion.png",
+      "cat": "it",
       "slug": "db-centralmedica",
       "git":"https://github.com/YerlinRojas/proyecto-final-sql.git",
       "demo":"https://github.com/YerlinRojas/proyecto-final-sql.git"
+    },
+    {
+      "name": "TotalChrome",
+      "description": "El diseño es limpio y profesional. Los colores son apropiados y diferencian claramente cada lápiz. La fuente es legible y bien distribuida.La gráfica resalta la precisión del lápiz demográfico, que es una característica clave para los usuarios. Apoya el mensaje de que el lápiz demográfico es más preciso que los competidores.",
+      "image": "/png/erika_totalchrome.png",
+      "image1":"/png/erika_totalchrome_image1.png",
+      "image2":"/png/erika_totalchrome_image2.png",
+      "image3":"/png/erika_totalchrome_image3.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "totalchrome",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Rebhan",
+      "description": "La gráfica muestra la gama de colores disponibles, destacando la diferencia en la cantidad de colores entre los dos sets ofrecidos. El diseño de la gráfica está pensado para ofrecer una visualización clara y atractiva de los colores, facilitando la elección del set más adecuado según las necesidades del usuario.",
+      "image": "/png/acuarela_rebhan.png",
+      "image1":"/png/acuarela_rebhan1.png",
+      "image2":"/png/acuarela_rebhan2.png",
+      "image3":"/png/acuarela_rebhan3.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "rebhan",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Juice Paint",
+      "description": "La gráfica diseñada para el nuevo marcador permanente destaca de manera creativa y visual el uso versátil del producto y su amplia gama de colores. El diseño tiene como objetivo comunicar claramente las aplicaciones del marcador en diferentes materiales y presentar la variedad de colores disponibles de forma impactante.",
+      "image": "/png/juice_paint.png",
+      "image1":"/png/juice_paint_1.png",
+      "image2":"/png/juice_paint_2.png",
+      "image3":"/png/juice_paint_3.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "juice-paint",
+      "git":"",
+      "demo":""
+    },
+    {
+      "name": "Juice Paint Expo",
+      "description": "La gráfica, diseñada específicamente para la exposición de librerías, presenta el nuevo marcador permanente destacando su uso versátil y su amplia gama de colores de manera creativa y visualmente atractiva. Esta gráfica está diseñada para captar la atención de los asistentes a la exposición y resaltar las características y aplicaciones del producto.",
+      "image": "/png/juice_paint_expo.png",
+      "image1":"/png/juice_paint_expo_1.png",
+      "image2":"/png/juice_paint_expo_2.png",
+      "image3":"/png/juice_paint_expo_1.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "juice-paint-expo",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Carbon Stick",
+      "description": "Esta gráfica presenta una comparación visual entre diferentes tipos de carbon stick y grafito stick, diferenciados a través de colores específicos. Cada color representa un tipo distinto de stick, lo que facilita la identificación y el análisis de las variaciones entre ellos.",
+      "image": "/png/carbon.png",
+      "image1":"/png/carbon1.png",
+      "image2":"/png/carbon2.png",
+      "image3":"/png/carbon3.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "carbon-stick",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Kaweco",
+      "description": "Con un diseño simple en conjunto con la gama de colores, representativa de la marca. Damos entra a los nuevos modelos que se introducen en el mercado.",
+      "image": "/png/kaweco.png",
+      "image1":"/png/kaweco1.png",
+      "image2":"/png/kaweco1.png",
+      "image3":"/png/kaweco1.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "kaweco",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Publicida Pilot",
+      "description": " Esta gráfica ilustra la gama de productos de Pilot Pen, destacando los más representativos de la marca. Siguiendo una línea de colores coherente, cada segmento de la gráfica está asociado con un producto específico, permitiendo una fácil identificación visual.",
+      "image": "/png/publi_pilot.png",
+      "image1":"/png/publi_pilot2.png",
+      "image2":"/png/publi_pilot3.png",
+      "image3":"/png/publi_pilot4.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "publi-pilot",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Publicida Pilot",
+      "description": "La gráfica no solo muestra los productos disponibles en el mercado, sino que también resalta aquellos que son emblemáticos para la marca Pilot. Este enfoque visual facilita a los consumidores identificar rápidamente sus opciones y seleccionar entre la variedad de productos de alta calidad que Pilot ofrece.",
+      "image": "/png/publi_pilot0.png",
+      "image1":"/png/publi_pilot5.png",
+      "image2":"/png/publi_pilot6.png",
+      "image3":"/png/publi_pilot6.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "publi-pilot2",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Stamp Stick",
+      "description": "La gráfica destaca las características únicas de Stamp Stick en comparación con sus competidores, subrayando su innovación y ventajas distintivas. Con un enfoque claro en la venta visual, cada elemento de la gráfica está cuidadosamente elaborado para captar la atención del consumidor, facilitando una comprensión rápida de por qué Stamp Stick es la elección superior. Los colores y los elementos visuales no solo diferencian el producto, sino que también lo posicionan como líder en su categoría.",
+      "image": "/png/stamp_stick.png",
+      "image1":"/png/stamp_stick1.png",
+      "image2":"/png/stamp_stick2.png",
+      "image3":"/png/stamp_stick3.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "stamp-stick",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Tool Pen",
+      "description": "Esta gráfica está dedicada al Tool Pen, un producto innovador que se distingue por sus características únicas en el mercado de escritura. La gráfica resalta cada una de estas características, presentándolas de manera clara y visualmente atractiva para que el consumidor pueda reconocer y apreciar las ventajas del Tool Pen. El diseño visual está enfocado en comunicar de manera efectiva las innovaciones y funcionalidades que hacen de Tool Pen una herramienta destacada, buscando establecerlo como una opción preferida entre los usuarios que valoran la calidad y la versatilidad en sus instrumentos de escritura.",
+      "image": "/png/tool_pen.png",
+      "image1":"/png/tool_pen1.png",
+      "image2":"/png/tool_pen1.png",
+      "image3":"/png/tool_pen1.png",
+      "gif":"",
+      "cat": "graphic",
+      "slug": "tool-pen",
+      "git":"",
+      "demo":""
     }
   ]
