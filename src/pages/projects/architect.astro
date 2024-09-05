@@ -1,8 +1,9 @@
 ---
 import Layout from "../../layouts/Layout.astro";
 import Data from "../../../public/data/data.json";
-import ProdCard from "../../components/ProdCard.astro";
+import ProdCard3 from "../../components/ProdCard3.astro";
 import Navbar2 from "../../components/Navbar2.astro";
+
 
 
 
@@ -21,12 +22,17 @@ const dataFiltrada = productos.filter((dato) => {
     ">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 p-4 max-w-screen-lg">
             {dataFiltrada.map((dato) => (
-                <ProdCard
+                <ProdCard3
                     name={dato.name}
                     description={dato.description}
                     image={dato.image}
+                    image1={dato.image1}
+                    image2={dato.image2}
+                    image3={dato.image3}
+                    image4={dato.image4}
                     slug={dato.slug} 
                     gif={dato.gif}
+                    cat={dato.cat}
                     
                 />
             ))}

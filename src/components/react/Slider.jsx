@@ -8,8 +8,8 @@ function Responsive({images}) {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     initialSlide: 1,
     autoplaySpeed: 3000,
     autoplay:true,
@@ -20,8 +20,8 @@ function Responsive({images}) {
       {
         breakpoint: 1024,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           infinite: true,
           dots: true,
           

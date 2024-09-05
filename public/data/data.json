@@ -209,4 +209,94 @@
       "git":"",
       "demo":""
     }
+    ,
+    {
+      "name": "Bathroom-Dressing room",
+      "description": "En este proyecto de baño y vestidor, hemos diseñado un espacio que busca captar y transmitir las visuales de un entorno natural, ofreciendo una experiencia única en un área tan íntima como el cuarto de baño. La intención principal es crear un ambiente que favorezca la relajación y el bienestar del usuario a través de la integración de elementos naturales. El contacto con la naturaleza se ha convertido en un componente clave en nuestro diseño, ya que está demostrado que genera un estímulo positivo para la relajación. En este sentido, hemos incorporado una bañera de diseño elegante que actúa como el punto focal del espacio, evocando la tranquilidad de un entorno natural. Cada detalle del baño y vestidor está cuidadosamente pensado para fusionar la estética y la funcionalidad, logrando una experiencia de alivio y serenidad sin igual. La armonía entre los materiales, la iluminación y los acabados refuerza esta conexión con la naturaleza, ofreciendo un refugio privado que invita a la calma y el descanso.",
+      "image": "/png/baño.png",
+      "image1":"/png/baño1.png",
+      "image2":"/png/baño2.png",
+      "image3":"/png/baño3.png",
+      "image4":"/png/baño4.png",
+      "gif":"",
+      "cat": "architect",
+      "slug": "bathroom-dressingroom",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Bus Terminal Station",
+      "description": "Frente a la creciente necesidad de una estación de autobuses eficiente y organizada, nace este proyecto con el objetivo de satisfacer plenamente las necesidades de los usuarios, abordando el problema prominente de la desorganización en los servicios actuales. Este proyecto se enfoca en restablecer el orden y proporcionar espacios con un alto valor arquitectónico. La volumetría de la terminal está compuesta por tres unidades que decrecen en tamaño, convergiendo hacia un cuerpo central. Este diseño no solo establece una guía clara para las rutas que deben seguir los autobuses por el lado posterior de la estructura, sino que también facilita un flujo organizado y eficiente dentro de la terminal. El diseño incluye un trayecto claramente definido para el embarque y desembarque de los usuarios, garantizando una experiencia fluida y ordenada. Cada elemento del proyecto ha sido cuidadosamente planeado para optimizar el tránsito de los autobuses y la comodidad de los pasajeros, contribuyendo a una estación que no solo resuelve problemas funcionales, sino que también ofrece un impacto estético y funcional significativo.",
+      "image": "/png/bus_station.png",
+      "image1":"/png/bus_station1.png",
+      "image2":"/png/bus_station2.png",
+      "image3":"/png/bus_station3.png",
+      "image4":"/png/bus_station4.png",
+      "gif":"",
+      "cat": "architect",
+      "slug": "bus-terminal",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Casa Navia",
+      "description": "Casa Navia se configura a partir de un esquema cuadriculado, que organiza los espacios en tres cuerpos distintivos, permitiendo una clara diferenciación de las áreas según sus usos. La propuesta arquitectónica se basa en un diseño que favorece la permeabilidad en la fachada posterior, integrando las actividades sociales del hogar con el entorno exterior. En el corazón del proyecto se encuentra un cuerpo de agua situado en el ala central, que actúa como un elemento focal y contribuye al bienestar de los habitantes. La fachada norte alberga la unidad central, dedicada a las áreas sociales, destacándose por su doble altura y un corredor que se extiende hacia las habitaciones. Este diseño no solo enfatiza la conexión entre los espacios, sino que también facilita el flujo natural de luz y ventilación. Las habitaciones están ubicadas en el núcleo este de la casa, una zona más cerrada y privada diseñada para proteger la intimidad de sus usuarios. Este núcleo se diferencia del resto de la casa por su carácter más hermético, garantizando un entorno tranquilo y reservado. En el núcleo de menor altura se encuentran la cocina, el comedor y una sala de juegos, todos ellos con acceso directo a las áreas exteriores, como la piscina y el solárium. Este diseño promueve una interacción fluida entre los espacios internos y externos, ofreciendo a los residentes un entorno dinámico y funcional.",
+      "image": "/png/casa.png",
+      "image1":"/png/casa1.png",
+      "image2":"/png/casa2.png",
+      "image3":"/png/casa3.png",
+      "image4":"/png/casa4.png",
+      "gif":"",
+      "cat": "architect",
+      "slug": "casa-navia",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Centro Cultural",
+      "description": "Renders realizados para el complejo y centro cultural",
+      "image": "/png/cct.png",
+      "image1":"/png/cct1.png",
+      "image2":"/png/cct2.png",
+      "image3":"/png/cct3.png",
+      "image4":"/png/cct4.png",
+      "gif":"",
+      "cat": "architect",
+      "slug": "cct",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Departamento H",
+      "description": "Siguiendo las últimas tendencias en interiorismo y el diseño arquitectónico contemporáneo, este loft representa una combinación binaria que equilibra la funcionalidad y la estética. La paleta de colores fríos y cálidos se ha seleccionado cuidadosamente para armonizar con el entorno y adaptarse a su uso como vivienda. Los pisos de madera y los tonos rojizos infunden calidez y confort en el espacio, mientras que el papel tapiz en las paredes añade un toque moderno y sofisticado al loft. Esta combinación no solo mejora la apariencia visual, sino que también crea un ambiente acogedor y contemporáneo. La escalera expuesta se convierte en un elemento clave del diseño, simbolizando la integración de los diferentes espacios y sus usos. Su presencia abierta contribuye a una sensación de amplitud visual en todo el departamento, destacando la fluidez y conexión entre las áreas. Este loft se presenta como un ejemplo de equilibrio entre lo clásico y lo moderno, ofreciendo un espacio funcional y estéticamente agradable que responde a las necesidades contemporáneas de sus habitantes.",
+      "image": "/png/flat.png",
+      "image1":"/png/flat1.png",
+      "image2":"/png/flat2.png",
+      "image3":"/png/flat3.png",
+      "image4":"/png/flat4.png",
+      "gif":"",
+      "cat": "architect",
+      "slug": "flat",
+      "git":"",
+      "demo":""
+    }
+    ,
+    {
+      "name": "Sala de Conferencias",
+      "description": "Este proyecto de sala de conferencias presenta un diseño de vanguardia, destacándose por sus detalles arquitectónicos metálicos que juegan un papel fundamental en la optimización de la iluminación. La fachada norte ha sido estratégicamente utilizada para aprovechar al máximo la luz natural, reflejándola de manera efectiva hacia el interior y creando un ambiente iluminado y energizante. Los elementos metálicos en la estructura no solo aportan un acabado moderno y elegante, sino que también contribuyen a la funcionalidad del espacio al mejorar la distribución de la luz. Este enfoque permite que la sala mantenga un ambiente luminoso y profesional, ideal para eventos y presentaciones. El diseño innovador y la utilización inteligente de los materiales aseguran que la sala de conferencias no solo cumpla con su propósito práctico, sino que también sea un ejemplo destacado de la integración entre arquitectura y tecnología.",
+      "image": "/png/oficina.png",
+      "image1":"/png/oficina1.png",
+      "image2":"/png/oficina2.png",
+      "image3":"/png/oficina3.png",
+      "image4":"/png/oficina4.png",
+      "gif":"",
+      "cat": "architect",
+      "slug": "conference-room",
+      "git":"",
+      "demo":""
+    }
   ]
